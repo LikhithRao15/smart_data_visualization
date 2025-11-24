@@ -81,7 +81,7 @@ export default function App() {
     formData.append("file", fileObj);
 
     try {
-      const res = await axios.post(`${import.meta.env.VITE_BACKEND_URL}/analyze`, formData, {
+      const res = await axios.post(`https://smart-data-visualization.onrender.com/analyze`, formData, {
         headers: { "Content-Type": "multipart/form-data" },
       });
       console.log("BACKEND RESPONSE:", res.data);
