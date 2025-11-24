@@ -10,7 +10,7 @@ app = FastAPI(title="Smart Data Visualization & Analysis API")
 
 origins = [
     "http://localhost:5173",
-    "http://127.0.0.1:5173",
+    "https://smart-data-visualization.vercel.app/",
 ]
 
 app.add_middleware(
